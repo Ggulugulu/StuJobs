@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+
+    defaultConfig {
+        applicationId "com.example.stujobs"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // 工具类
+    implementation 'com.github.xuexiangjys.XUtil:xutil-core:2.0.0'
+    implementation 'com.github.xuexiangjys.XUtil:xutil-sub:2.0.0'
+    //androidx项目
+    implementation 'com.github.xuexiangjys:XUI:1.2.0'
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    // XPage页面框架
+    implementation 'com.github.xuexiangjys.XPage:xpage-lib:3.2.0'
+    annotationProcessor 'com.github.xuexiangjys.XPage:xpage-compiler:3.2.0'
+    // 切片
+    implementation 'com.github.xuexiangjys.XAOP:xaop-runtime:1.1.0'
+    // 页面路由
+    implementation 'com.github.xuexiangjys.XRouter:xrouter-runtime:1.1.0'
+    annotationProcessor 'com.github.xuexiangjys.XRouter:xrouter-compiler:1.1.0'
+
+    // ButterKnife
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    // umeng统计
+    implementation 'com.umeng.umsdk:common:9.3.8'
+    // 切片
+    implementation 'com.github.xuexiangjys.XAOP:xaop-runtime:1.1.0'
+    // 页面路由
+    implementation 'com.github.xuexiangjys.XRouter:xrouter-runtime:1.1.0'
+    // 弹性布局
+    implementation 'com.google.android:flexbox:0.3.1'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    // 下拉刷新
+    implementation 'com.github.xuexiangjys.SmartRefreshLayout:refresh-header:1.1.5'
+    implementation 'com.github.xuexiangjys.SmartRefreshLayout:refresh-layout:1.1.5'
+    // 双列表联动
+    implementation 'com.kunminx.linkage:linkage-recyclerview:1.9.2'
+    //多条件筛选
+    implementation 'com.github.binbinyYang:FilterSelectUi:1.0.0'
+    //chat适配器
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //选择照片
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
+    implementation 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+
+    //融云聊天sdk
+    api 'cn.rongcloud.sdk:im_kit:5.1.3'
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/click_mess">
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="30px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/introduce_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="前端工程师"/>
+            <TextView
+                android:id="@+id/send_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="#9A393A3E"
+                android:textSize="12sp"
+                android:text="杭州天然科技有限公司"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:id="@+id/send_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:text="已通过"
+                android:textStyle="bold"
+                />
+
+            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                android:id="@+id/send_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="通过"
+                app:rb_backgroundColor="@color/color_75AE75"/>
+            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                android:id="@+id/send_out"
+                android:layout_toRightOf="@id/send_pass"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="拒绝"
+                app:rb_backgroundColor="@color/app_color_theme_1"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/send_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:sDividerLineType="none"
+        android:layout_marginTop="3dp"
+        app:sLeftTextString="模拟简历1"
+        app:sLeftTextSize="12sp"
+        app:sLeftTextColor="@color/color_75AE75"
+        app:sLeftTextIsBold="true"
+        app:sRightTextString="吴思婷"
+        app:sRightTextSize="12sp"
+        app:sRightTextColor="#9A393A3E"/>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:background="#eff2f7"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+</LinearLayout>

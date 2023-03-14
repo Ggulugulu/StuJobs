@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/click_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.xuexiang.xui.widget.imageview.RadiusImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_launcher"
+                app:riv_is_circle="true" />
+
+            <TextView
+                android:id="@+id/tv_company"
+                style="@style/TextStyle.Explain"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="4dp"
+                android:text="上海米哈游有限公司"
+                android:textColor="@color/xui_config_color_pure_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:textColor="#4CAF50"
+            android:textSize="16sp"
+            android:layout_gravity="end|center_vertical"
+            android:text="10-12k/月"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextStyle.Content"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="Android开发"
+                android:textColor="@color/xui_config_color_pure_black" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flowlayout_normal_select"
+                android:layout_width="match_parent"
+                app:flexWrap="wrap"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_praise"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_praise" />
+
+            <TextView
+                android:id="@+id/tv_praise"
+                style="@style/TextStyle.Explain"
+                android:layout_marginStart="5dp"
+                android:text="点赞" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_comment"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                style="@style/TextStyle.Explain"
+                android:layout_marginStart="5dp"
+                android:text="评论" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</merge>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eff2f7"
+    tools:context=".activity.MoreActivity">
+
+    <include layout="@layout/common_titlebar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/more_position"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:sLeftTopTextString="前端工程师"
+                app:sLeftTopTextIsBold="true"
+                app:sLeftTopTextSize="23sp"
+                app:sLeftViewMarginLeft="12dp"
+                app:sRightBottomTextString="10-12k/月"
+                app:sRightBottomTextColor="#4CAF50"
+                app:sRightBottomTextSize="23sp"/>
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/more_company"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:sLeftIconRes="@drawable/icon_head_default"
+                app:sLeftViewGravity="left_center"
+                app:sDividerLineType="both"
+                app:sLeftTopTextString="杭州天然科技有限公司"
+                app:sLeftTopTextIsBold="true"
+                app:sLeftTopTextSize="15sp"
+                app:sLeftBottomTextString="浙江省杭州市白杨街道"
+                app:sLeftBottomTextSize="12sp"
+                app:sLeftBottomTextColor="#9A393A3E"
+                app:sLeftViewMarginLeft="10dp" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/more_hr"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:sDividerLineType="none"
+                app:sLeftIconRes="@drawable/ic_blue_rec"
+                app:sLeftIconTint="@color/app_color_theme_4"
+                app:sLeftViewGravity="left_center"
+                app:sLeftTextString="马先生"
+                app:sLeftTextColor="#333333"
+                app:sLeftTextSize="15sp"
+                app:sLeftIconMarginLeft="12dp"
+                app:sLeftIconWidth="10dp"
+                app:sLeftIconHeight="10dp"/>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/more_fl"
+                android:layout_width="match_parent"
+                app:flexWrap="wrap"
+                android:background="@color/white"
+                android:layout_height="wrap_content" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                app:sDividerLineType="bottom"
+                app:sLeftIconRes="@drawable/ic_blue_rec"
+                app:sLeftIconMarginLeft="12dp"
+                app:sLeftIconWidth="7dp"
+                app:sLeftIconHeight="20dp"
+                app:sLeftTextString="职位详情"
+                app:sLeftViewGravity="left_center"
+                app:sLeftTextIsBold="true"
+                app:sLeftTextSize="17sp" />
+            <TextView
+                android:id="@+id/more_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="12dp"
+                android:text="1.负责前端项目技术架构设计优化、组件库设计开发以及跨端等前研技术的研究；
+2.负责大前端方向的技术方案设计和建设；
+3.负责高质量编码、技术方案输出以及优化；
+4.负责App及WEB端(H5、小程序、功能）的开发和优化工作。"/>
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:sDividerLineType="both"
+                app:sLeftIconRes="@drawable/ic_blue_rec"
+                app:sLeftIconMarginLeft="12dp"
+                app:sLeftIconWidth="7dp"
+                app:sLeftIconHeight="20dp"
+                app:sLeftTextString="职位要求"
+                app:sLeftViewGravity="left_center"
+                app:sLeftTextIsBold="true"
+                app:sLeftTextSize="17sp" />
+            <TextView
+                android:id="@+id/more_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="12dp"
+                android:text="1.5年以上前端开发工作经验；
+2.精通html5、css3、javascript(ES6/ES7)、nodejs等前端开发技术；
+3.熟悉常用前端框架，如：react、vue、zepto、element等,习惯es6语法，可熟练使用webpack npm 进行模块化开发和工程化配置；
+4.可熟练使用开发者工具调试，快速定位以及解决问题的能力；
+5.学习能力强，工作认真负责，善于沟通，具备较强产品理解能力；
+6.有过SAAS.ERP等管理系统开发经验的优先考虑"/>
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/more_praise"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:sDividerLineType="both"
+                app:sLeftIconRes="@drawable/ic_blue_rec"
+                app:sLeftIconMarginLeft="12dp"
+                app:sLeftIconWidth="7dp"
+                app:sLeftIconHeight="20dp"
+                app:sLeftTextString="公司评论"
+                app:sLeftViewGravity="left_center"
+                app:sLeftTextIsBold="true"
+                app:sLeftTextSize="17sp"
+                app:sRightTextString="评论"
+                app:sRightTextIsBold="true"
+                app:sRightTextSize="15sp"
+                app:sRightViewMarginRight="12dp"
+                app:sRightTextColor="@color/app_color_theme_4"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_praise"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        android:id="@+id/more_send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:rb_backgroundColor="@color/theme_blue"
+        android:text="投递简历"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+
+
+</LinearLayout>

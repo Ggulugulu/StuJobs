@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:id="@+id/click_mess">
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img2"
+            android:src="@drawable/icon_introduce"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/introduce_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="简历模板1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="#9A393A3E"
+                android:textSize="12sp"
+                android:text="pdf附件"/>
+
+        </LinearLayout>
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/introduce_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="预览"
+            app:rb_backgroundColor="@color/color_75AE75"/>
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/introduce_delete"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="删除"
+            app:rb_backgroundColor="@color/app_color_theme_1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ll_2"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:background="#eff2f7"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+</RelativeLayout>
